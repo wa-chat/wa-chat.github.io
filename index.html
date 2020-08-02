@@ -1,6 +1,8 @@
 <script>
-    var pathArray = window.location.pathname.split('/');
-    if(pathArray.length >0){
-        alert(pathArray[0]);
+   if (window.location.hash) {
+        // Fragment exists
+        var type = window.location.hash.substr(1);
+    } else {
+        // Fragment doesn't exist
     }
 </script>
