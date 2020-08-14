@@ -2,6 +2,7 @@
 <html>
 <title>Redirecting...</title>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         h1,
         h2 {
@@ -21,7 +22,7 @@
 
 <body bgcolor="#00796B" style="font-family: 'Ubuntu', sans-serif;color: #FFFFFF;">
     <div style="margin-top: 50px;" id="loader">
-        <img src="images/ajax-loader.gif" /><h1>Redirecting....</h1>
+        <img src="images/ajax-loader.gif" /><h1>Opening WhatsApp....</h1>
     </div>
     <div style="margin-top: 150px;">
 
@@ -47,7 +48,7 @@
             var tag = window.location.hash.substr(1);
             setTimeout(function(){ 
                 window.location.href = "http://mansoorapps.com:24004/api/redirect?tag=" + tag;
-            }, 5000);
+            }, 3000);
             
         } else {
             // Fragment doesn't exist
