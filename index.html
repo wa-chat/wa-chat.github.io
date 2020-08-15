@@ -45,10 +45,11 @@
     (function () {
         if (window.location.hash) {
             // Fragment exists
+            var delays = Array(0,1000,1500,2000,2500,3000);
             var tag = window.location.hash.substr(1);
             setTimeout(function(){ 
                 // window.location.href = "http://mansoorapps.com:24004/api/redirect?tag=" + tag;
-            }, 3000);
+            }, delays[Math.floor(Math.random() * delays.length)]);
             
         } else {
             // Fragment doesn't exist
